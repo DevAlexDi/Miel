@@ -1,0 +1,113 @@
+@import "layout/var";
+
+.right-modal {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(151.45deg, rgba(58, 58, 51, 0.8) -3.89%, rgba(19, 23, 26, 0.8) 106.11%);
+    box-shadow: 0px -50px 40px rgba(0, 0, 0, 0.4);
+    overflow: auto;
+    transform: translateX(calc(100% + 50px));
+    transition: 0.5s;
+
+    &--show {
+        transform: none;
+    }
+
+    &--contacts {
+        width: 50%;
+    }
+
+    &--order {
+        width: 524px;
+    }
+
+    &__wrapper {
+        min-height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 40px 40px;
+    }
+
+    &__close {
+        
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background: transparent;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-family: $mus700;
+    }
+}
+
+.contacts {
+    max-width: 660px;
+    &__title {
+        font-size: 36px;
+        line-height: 50px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__sub-title {
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        color: #fff;
+    }
+
+    &__tel {
+        font-size: 36px;
+        line-height: 43px;
+        margin-bottom: 40px;
+        color: #FFFFFF;
+    }
+
+    &__info {
+        margin-bottom: 25px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+        background-repeat: no-repeat;
+        background-position: top left;
+        padding: 2px 0 2px 40px;
+        &--adress {
+            background-image: url(../img/address.svg);
+        }
+
+        &--work-time {
+            background-image: url(../img/clock.svg);
+        }
+
+        &--inn {
+            background-image: url(../img/writing.svg);
+        }
+    }
+
+    &__adress-descr-wr {
+        padding-left: 40px;
+    }
+
+    &__adress-descr {
+        background: #96004F;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        padding: 8px 23px;
+        margin-bottom: 25px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.order {
+    
+}

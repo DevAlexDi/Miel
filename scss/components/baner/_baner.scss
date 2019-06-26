@@ -1,0 +1,91 @@
+@import "layout/var";
+
+.baner {
+    padding: 30px 0;
+    margin: auto 0;
+    max-width: 635px;
+    &__title {
+        font-size: 64px;
+        line-height: 77px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: $mus700;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 30px;
+        color: #FFFFFF;
+
+        span{
+            font-family: $mus700;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.button-wr {
+    display: flex;
+    justify-content: flex-end;
+
+    &__button {
+        display: flex;
+        text-align: center;
+        border: none;
+        background: #96004F;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 100px;
+        padding: 4px;
+        min-height: 49px;
+    }
+
+    &__button-text {
+        display: block;
+        color: #fff;
+        margin: auto;
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+        padding: 0 32px;
+    }
+
+    &__button-icon {
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+    }
+}
+
+.c-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        width: 200px;
+        display: block;
+    }
+}
+
+.cat-link {
+    background: rgba(150, 0, 79, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+
+    &__img {
+        margin: 0 auto 16px;
+    }
+
+    &__name {
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+        display: block;
+    }
+}

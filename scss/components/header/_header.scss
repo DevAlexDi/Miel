@@ -1,0 +1,78 @@
+@import "layout/var";
+
+.header {
+    display: flex;
+    align-items: center;
+
+    &__left-side {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__mid-side {
+        flex-shrink: 0;
+    }
+
+    &__right-side {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    &__logo {
+        flex-shrink: 0;
+        margin-right: 17px;
+        display: block;
+    }
+
+    &__tel {
+        text-align: right;
+        font-size: 24px;
+        line-height: 29px;
+        color: #fff;
+    }
+
+    &__call-me {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        color: #fff;
+    }
+}
+
+.menu-butt {
+    display: flex;
+    cursor: pointer;
+    &__ham {
+        flex-shrink: 0;
+        margin-right: 12px;
+
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: $mus300;
+    }
+}
+
+.header-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &__item {
+        padding: 0 20px;
+    }
+
+    &__link {
+        display: block;
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
