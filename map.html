@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>miel</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+  
+</head>
+<body>
+    
+    <div class="app">
+        <section class="app__flex-wrapper app__flex-wrapper--map-theme">
+            <header class="header">
+                <div class="header__left-side">
+                    <a href="#" class="header__logo">
+                        <img src="img/logo.svg" class="img-responsive" alt="">
+                    </a>
+                    <div class="menu-butt">
+                        <div class="menu-butt__ham">
+                            <img src="img/menu.svg" class="img-responsive" alt="">
+                        </div>
+                        <p class="menu-butt__text">Меню</p>
+                    </div>
+                </div>
+                <div class="header__mid-side">
+                    <ul class="header-menu">
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Наши услуги</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">База обьектов</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Срочная продажа</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="#" class="header-menu__link">Срочный выкуп</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <span class="header-menu__link open-contacts">Контакты</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__right-side">
+                    <p class="header__tel">+7 (495) 532-10-90</p>
+                    <p class="header__call-me open-order">Заказать звонок</p>
+                </div>
+            </header>
+            
+            <div class="search">
+                <div class="filter search__filter">
+                    <div class="filter__wr">
+                        <button class="filter__sm-close">X <span>Фильтр</span></button>
+                        <h2 class="filter__title">Фильтры</h2>
+                        <form>
+                            <div class="filter__inp-adress-wr">
+                                <input type="text" class="filter__inp filter__inp--adress" placeholder="Область, район, город, улица, станция метро">
+                            </div>
+                            <!--выбранные адреса-->
+                            <!-- <div class="filter__picked-addresses">
+                                <div class="filter__picked-address">
+                                    <p>Москва</p>
+                                    <span class="filter__picked-address-delete">x</span>
+                                </div>
+                                <div class="filter__picked-address">
+                                    <p>Ильинское-Усово</p>
+                                    <span class="filter__picked-address-delete">x</span>
+                                </div>
+                            </div> -->
+                            <p class="filter__title-groupe">Тип объекта</p>
+                            <div class="filter-checkboxes">
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="filter-check-1">
+                                        <label for="filter-check-1">Квартира</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="filter-check-2">
+                                        <label for="filter-check-2">Дом</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="filter-check-3">
+                                        <label for="filter-check-3">Офис</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="filter__title-groupe">Комнат</p>
+                            <div class="filter-checkboxes">
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="rooms-check-1">
+                                        <label for="rooms-check-1">1</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="rooms-check-2">
+                                        <label for="rooms-check-2">2</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="rooms-check-3">
+                                        <label for="rooms-check-3">3</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="rooms-check-4">
+                                        <label for="rooms-check-4">4</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="rooms-check-5">
+                                        <label for="rooms-check-5">5</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="filter__title-groupe">Цена, руб.</p>
+                            <div class="filter__flex-inp">
+                                <input type="text" class="filter__inp" placeholder="От">
+                                <input type="text" class="filter__inp" placeholder="До">
+                            </div>
+                            <p class="filter__title-groupe">Площадь, м2</p>
+                            <div class="filter__flex-inp">
+                                <input type="text" class="filter__inp" placeholder="От">
+                                <input type="text" class="filter__inp" placeholder="До">
+                            </div>
+                            <p class="filter__title-groupe">Этаж</p>
+                            <div class="filter-checkboxes">
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="floor-check-1">
+                                        <label for="floor-check-1">1</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="floor-check-2">
+                                        <label for="floor-check-2">2</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="floor-check-3">
+                                        <label for="floor-check-3">3</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="floor-check-4">
+                                        <label for="floor-check-4">4</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="floor-check-5">
+                                        <label for="floor-check-5">5</label>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                            <p class="filter__title-groupe">Кухня, м2</p>
+                            <input type="text" class="filter__inp" placeholder="От">
+
+                            <p class="filter__title-groupe">Тип здания</p>
+                            <div class="filter-checkboxes">
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="type-check-1">
+                                        <label for="type-check-1">Кирпичный</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="type-check-2">
+                                        <label for="type-check-2">Монолит</label>
+                                    </div>
+                                </div>
+                                <div class="filter-checkbox filter-checkboxes__item">
+                                    <div class="filter-checkbox__check-style">
+                                        <input type="checkbox" class="filter-checkbox__checkbox" name="" id="type-check-3">
+                                        <label for="type-check-3">Панельный</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="filter__submit" type="button">Подобрать предложения</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="map-side search__map">
+                    <div class="map-side__wr">
+                        <h1 class="map-side__title">
+                            <button class="map-side__filter-open">
+                                <img src="img/filter.svg" class="img-responsive"></button>
+                                База обьектов
+                        </h1>
+                        <ul class="breads map-side__breads">
+                            <li class="breads__item">
+                                <a href="#" class="breads__link">Главная</a>
+                            </li>
+                            <li class="breads__item">
+                                <span class="breads__link">База обьектов</span>
+                            </li>
+                        </ul>
+                        <div class="map map-side__map" id="map"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </section>
+        <div class="right-modal right-modal--menu">
+            <div class="right-modal__wrapper">
+                <button class="right-modal__close">X <span>Меню</span></button>
+                <nav class="main-menu right-modal__vertical-center">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item right-modal__child-animated">
+                            <a href="#" class="main-menu__link main-menu__link--active">Наши услуги</a>
+                        </li>
+                        <li class="main-menu__item right-modal__child-animated">
+                            <a href="#" class="main-menu__link">База обьектов</a>
+                        </li>
+                        <li class="main-menu__item right-modal__child-animated">
+                            <a href="#" class="main-menu__link">Срочная продажа</a>
+                        </li>
+                        <li class="main-menu__item right-modal__child-animated">
+                            <a href="#" class="main-menu__link">Срочный выкуп</a>
+                        </li>
+                        <li class="main-menu__item right-modal__child-animated">
+                            <a href="#" class="main-menu__link">Новостройки</a>
+                        </li>
+                        <li class="main-menu__item right-modal__child-animated">
+                            <a href="#" class="main-menu__link">Квартиры</a>
+                        </li>
+                        <li class="main-menu__item right-modal__child-animated">
+                            <a href="#" class="main-menu__link">Загородная</a>
+                        </li>
+                        <li class="main-menu__item right-modal__child-animated">
+                            <a href="#" class="main-menu__link">Коммереческая</a>
+                        </li>
+                        <li class="main-menu__item right-modal__child-animated">
+                            <span class="main-menu__link open-contacts">Контакты</span>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="#" class="right-modal__terms">Политика конфиденциальности</a>
+            </div>
+        </div>
+
+        <div class="right-modal right-modal--contacts">
+            <div class="right-modal__wrapper">
+                <button class="right-modal__close">X</button>
+                <div class="contacts right-modal__vertical-center">
+                    <h3 class="contacts__title right-modal__child-animated">Контакты</h3>
+                    <p class="contacts__sub-title right-modal__child-animated">ОФИС «ПРЕЧИСТЕНКА»</p>
+                    <p class="contacts__tel right-modal__child-animated">+7 (495) 532-10-90</p>
+                    <p class="contacts__info right-modal__child-animated contacts__info--adress">м. «Парк культуры», ул. Пречистенка, д. 40/2, стр.1, подъезд № 1, 3 этаж</p>
+                    <div class="contacts__adress-descr-wr right-modal__child-animated">
+                        <p class="contacts__adress-descr">Угловой дом с вывеской «Смоленский бульвар, 2», подъезд расположен со стороны Садового кольца, справа от подъезда — Международный центр охраны зрения</p>
+                    </div>
+                    <p class="contacts__info right-modal__child-animated contacts__info--work-time">Пн-Пт: с 09:00 до 21:00. Cб: с 10:00 до 17:00</p>
+                    <p class="contacts__info right-modal__child-animated contacts__info--inn">ОГРН 1177746506640, ИНН 7704415565, КПП 770401001</p>
+                </div>
+            </div>
+        </div>
+        <!--right-modal--show -->
+        <div class="right-modal right-modal--order">
+            <div class="right-modal__wrapper">
+                <button class="right-modal__close">X</button>
+                <form class="order right-modal__vertical-center">
+                    <h3 class="order__title right-modal__child-animated">Заказать звонок</h3>
+                    <input type="text" class="order__input right-modal__child-animated" placeholder="Имя">
+                    <div class="order__row-inputs right-modal__child-animated">
+                        <div class="order__col-inputs">
+                            <input type="text" class="order__input tel-inp" placeholder="Телефон">
+                        </div>
+                        <div class="order__col-inputs">
+                            <input type="text" class="order__input" placeholder="Когда вам удобно?">
+                        </div>
+                    </div>
+                    <input type="text" class="order__input right-modal__child-animated" placeholder="Дополнительная информация">
+                    <div class="one-checkbox right-modal__child-animated">
+                        <div class="one-checkbox__check-style">
+                            <input type="checkbox" class="one-checkbox__checkbox" name="role" id="checkbox-1" checked>
+                            <label for="checkbox-1"></label>
+                        </div>
+                        <p class="one-checkbox__label">Согласен на обработку персональных данных</p>
+                    </div>
+                    <div class="button-wr baner__button-wr right-modal__child-animated">
+                        <button class="button-wr__button modal-request-show">
+                            <span class="button-wr__button-text">Заказать звонок</span>
+                            <span class="button-wr__button-icon">
+                                <img src="img/butt-icon.svg" alt="" class="img-responsive">
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+        <div class="app__backdrop-modal"></div>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/inputmask.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/map-init.js"></script>
+
+</body>
+</html>
