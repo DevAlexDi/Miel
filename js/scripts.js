@@ -7,21 +7,6 @@ $(document).ready(function(){
         , showMaskOnFocus: true
     });
 
-    // function scrollMenus() {
-    //     if($(window).scrollTop() > 300){
-    //         $('.header__bott').addClass('fixed-style');
-    //       }
-    //       else {
-    //         $('.header__bott').removeClass('fixed-style');
-    //     }
-    // }
-   
-    // scrollMenus();
-
-    // $(window).scroll(function(){
-    //     scrollMenus();
-    // });
-
     $('.app__backdrop-modal, .right-modal__close').click(function(){
         $('.right-modal').removeClass('right-modal--show');
         $('.filter').removeClass('filter--show');
@@ -55,6 +40,18 @@ $(document).ready(function(){
     $('.filter__sm-close').click(function(){
         $('.filter').removeClass('filter--show');
         $('.app').removeClass('app--opened-modal'); 
+    });
+
+    $('.faq').click(function(){
+        if(!$(this).hasClass('faq--opened')){
+            $(this).addClass('faq--opened');
+            $(this).find('.faq__hidden-text').slideDown(300);
+        }
+        else {
+            $(this).removeClass('faq--opened');
+            $(this).find('.faq__hidden-text').slideUp(300);
+        }
+       
     });
 
 });

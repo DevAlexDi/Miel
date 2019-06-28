@@ -9,6 +9,10 @@
         @media (max-width: 1199px) {
             display: block;
         }
+
+        &--sale {
+            padding-bottom: 40px;
+        }
     }
 
     &__left-side {
@@ -182,6 +186,12 @@
             font-size: 18px;
             line-height: normal;
         }
+
+        &--sm-theme{
+            font-size: 18px;
+            line-height: 22px;
+            margin: 0 0 30px 0;
+        }
     }
 
     &__item-text {
@@ -194,6 +204,13 @@
 
         @media (max-width: 767px) {
             font-size: 14px;
+        }
+
+        &--sm-theme{
+            font-size: 16px;
+            line-height: 19px;
+            padding: 0;
+            margin: 0;
         }
     }
 
@@ -215,5 +232,213 @@
                 width: 100%;
             }
         }
+    }
+}
+
+.fast-form {
+    background: linear-gradient(119.32deg, #3A3A33 3.77%, #13171A 100%);
+    padding: 40px;
+
+    @media (max-width: 767px) {
+        padding: 30px 7.5px;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 43px;
+        margin-bottom: 32px;
+        color: #FFFFFF;
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+            line-height: normal;
+        }
+    }
+
+    &__descr {
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        margin-bottom: 20px;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: normal;
+        }
+    }
+
+    &__flex {
+        display: flex;
+
+        @media (max-width: 767px) {
+            display: block;
+        }
+    }
+
+    &__side {
+        width: 50%;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        &:first-child {
+            padding-right: 12px;
+
+            @media (max-width: 767px) {
+                padding: 0;
+            }
+        }
+
+        &:last-child {
+            padding-left: 12px;
+
+            @media (max-width: 767px) {
+                padding: 0;
+            }
+        }
+    }
+
+    &__submit {
+        display: block;
+        background: #96004F;
+        border: none;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 100px;
+        width: 255px;
+        margin-left: auto;
+        transition: 0.3s;
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        line-height: 25px;
+        color: #fff;
+
+        @media (max-width: 767px) {
+            margin: 0 auto;
+        }
+
+        &:hover {
+            background: rgba(150, 0, 79, 0.6);
+        }
+    }
+}
+
+.faq-wr {
+    padding-bottom: 40px;
+    &__item {
+        margin-bottom: 16px;
+    }
+}
+
+.faq {
+    background: linear-gradient(168.6deg, #3A3A33 3.77%, #13171A 100%);
+    padding: 16px 16px 16px 60px;
+    position: relative;
+    cursor: pointer;
+
+    @media (max-width: 767px) {
+        padding: 16px 16px 16px 40px;
+    }
+
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 22px;
+        left: 16px;
+        width: 0;
+        height: 0;
+        transform-origin: center;
+        border-style: solid;
+        transition: 0.3s;
+        border-width: 8px 7px 0 7px;
+        border-color: #ffffff transparent transparent transparent;
+
+        @media (max-width: 767px) {
+            left: 10px;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+    }
+
+    &__hidden-text {
+        display: none;
+    }
+
+    &__text {
+        padding-top: 20px;
+        color: #fff;
+        font-size: 16px;
+
+        &--strong {
+            font-family: $mus700;
+        }
+
+        &--italic {
+            font-style: italic;
+        }
+    }
+
+    &--opened {
+        &:before {
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+.rewards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 700px;
+
+    @media (max-width: 1199px) {
+        margin: 0 auto;
+    }
+
+    
+
+    &__item {
+        width: 25%;
+        padding: 0 20px;
+        margin-bottom: 40px;
+
+        @media (max-width: 767px) {
+            padding: 0 7.5px;
+            margin-bottom: 7.5px;
+        }
+
+        @media (max-width: 400px) {
+            width: 50%;
+        }
+    }
+}
+
+.sale-index-text {
+    background: rgba(150, 0, 79, 0.6);
+    border-radius: 10px;
+    padding: 34px 60px;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 43px;
+
+    color: #FFFFFF;
+
+    @media (max-width: 1366px) {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    @media (max-width: 1199px) {
+        text-align: center;
+    }
+
+    @media (max-width: 767px) {
+        padding: 20px 10px;
     }
 }
