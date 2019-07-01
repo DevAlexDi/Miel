@@ -32,10 +32,10 @@
                             <a href="#" class="header-menu__link">Наши услуги</a>
                         </li>
                         <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">База обьектов</a>
+                            <a href="#" class="header-menu__link header-menu__link--active">База обьектов</a>
                         </li>
                         <li class="header-menu__item">
-                            <a href="#" class="header-menu__link">Срочная продажа</a>
+                            <a href="#" class="header-menu__link">Продажа</a>
                         </li>
                         <li class="header-menu__item">
                             <a href="#" class="header-menu__link">Срочный выкуп</a>
@@ -54,8 +54,8 @@
             <div class="search">
                 <div class="filter search__filter">
                     <div class="filter__wr">
-                        <button class="filter__sm-close">X <span>Фильтр</span></button>
-                        <h2 class="filter__title">Фильтры</h2>
+                        <!-- <button class="filter__sm-close">X <span>Фильтр</span></button> -->
+                        <h2 class="filter__title">Заявка</h2>
                         <form>
                             <div class="filter__inp-adress-wr">
                                 <input type="text" class="filter__inp filter__inp--adress" placeholder="Область, район, город, улица, станция метро">
@@ -174,6 +174,12 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="filter__inp-adress-wr">
+                                <input type="text" class="filter__inp" placeholder="Имя">
+                            </div>
+                            <div class="filter__inp-adress-wr">
+                                <input type="text" class="filter__inp tel-inp" placeholder="Телефон">
+                            </div>
                             <button class="filter__submit" type="button">Подобрать предложения</button>
                         </form>
                     </div>
@@ -181,8 +187,8 @@
                 <div class="map-side search__map">
                     <div class="map-side__wr">
                         <h1 class="map-side__title">
-                            <button class="map-side__filter-open">
-                                <img src="img/filter.svg" class="img-responsive"></button>
+                            <!-- <button class="map-side__filter-open">
+                                <img src="img/filter.svg" class="img-responsive"></button> -->
                                 База обьектов
                         </h1>
                         <ul class="breads map-side__breads">
@@ -193,7 +199,23 @@
                                 <span class="breads__link">База обьектов</span>
                             </li>
                         </ul>
-                        <div class="map map-side__map" id="map"></div>
+                        <ul class="fast-sub-menu">
+                            <li class="fast-sub-menu__item app__child-animated">
+                                <a href="#" class="fast-sub-menu__link fast-sub-menu__link--active">База обьектов</a>
+                            </li>
+                            <li class="fast-sub-menu__item app__child-animated">
+                                <a href="#" class="fast-sub-menu__link">Новостройки</a>
+                            </li>
+                            <li class="fast-sub-menu__item app__child-animated">
+                                <a href="#" class="fast-sub-menu__link">Квартиры, комнаты</a>
+                            </li>
+                            <li class="fast-sub-menu__item app__child-animated">
+                                <a href="#" class="fast-sub-menu__link">Загородная</a>
+                            </li>
+                            <li class="fast-sub-menu__item app__child-animated">
+                                <a href="#" class="fast-sub-menu__link">Коммерческая</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -207,13 +229,13 @@
                 <nav class="main-menu right-modal__vertical-center">
                     <ul class="main-menu__list">
                         <li class="main-menu__item right-modal__child-animated">
-                            <a href="#" class="main-menu__link main-menu__link--active">Наши услуги</a>
+                            <a href="#" class="main-menu__link">Наши услуги</a>
                         </li>
                         <li class="main-menu__item right-modal__child-animated">
-                            <a href="#" class="main-menu__link">База обьектов</a>
+                            <a href="#" class="main-menu__link main-menu__link--active">База обьектов</a>
                         </li>
                         <li class="main-menu__item right-modal__child-animated">
-                            <a href="#" class="main-menu__link">Срочная продажа</a>
+                            <a href="#" class="main-menu__link">Продажа</a>
                         </li>
                         <li class="main-menu__item right-modal__child-animated">
                             <a href="#" class="main-menu__link">Срочный выкуп</a>
@@ -297,13 +319,11 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/inputmask.js"></script>
     <script type="text/javascript" src="js/jquery.inputmask.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <script type="text/javascript" src="js/map-init.js"></script>
 
 </body>
 </html>

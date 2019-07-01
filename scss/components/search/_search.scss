@@ -8,6 +8,7 @@
     @media (max-width: 991px) {
         margin-top: 0;
         min-height: auto;
+        flex-direction: column-reverse;
     }
     
 
@@ -22,7 +23,7 @@
         }
 
         @media (max-width: 991px) {
-            width: 500px;
+            width: 100%;
             padding-top: 10px;
         }
 
@@ -44,10 +45,11 @@
         @media (max-width: 991px) {
             width: 100%;
             padding-top: 0;
+            padding-bottom: 0;
         }
 
         @media (max-width: 767px) {
-            padding: 0 7.5px 30px 7.5px;
+            padding: 0 7.5px 0px 7.5px;
         }
         
     }
@@ -76,6 +78,10 @@
 
     &__breads {
         margin-bottom: 55px;
+
+        @media (max-width: 991px) {
+            margin-bottom: 20px;
+        }
     }
 
     &__filter-open {
@@ -122,16 +128,16 @@
 
 .filter {
 
-    @media (max-width: 991px) {
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100%;
-        z-index: 100;
-        transition: 0.3s;
-        transform: translateX(calc(-100% - 50px));
-        overflow: auto;
-    }
+    // @media (max-width: 991px) {
+    //     position: fixed;
+    //     left: 0;
+    //     top: 0;
+    //     height: 100%;
+    //     z-index: 100;
+    //     transition: 0.3s;
+    //     transform: translateX(calc(-100% - 50px));
+    //     overflow: auto;
+    // }
 
     
     &::-webkit-scrollbar {
@@ -164,6 +170,10 @@
 
         @media (max-width: 1199px) {
             padding: 80px 20px 40px;
+        }
+
+        @media (max-width: 991px) {
+            padding-top: 40px;
         }
 
         @media (max-width: 767px) {
