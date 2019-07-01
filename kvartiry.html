@@ -52,111 +52,130 @@
             </header>
             <div class="fast">
                 <div class="lg-container">
-                    <div class="sm-container">
-                        <div class="c-list c-list--top-bott-distance">
-                            <div class="c-list__child-animated">
-                                <a href="#" class="cat-link c-list__item ">
-                                    <img src="img/cat-1.svg" class="cat-link__img img-responsive" alt="">
-                                    <span class="cat-link__name">Новостройки</span>
-                                </a>
-                            </div>
-                            <div class="c-list__child-animated">
-                                <a href="#" class="cat-link c-list__item cat-link--active">
-                                    <img src="img/cat-2.svg" class="cat-link__img img-responsive" alt="">
-                                    <span class="cat-link__name">Квартиры</span>
-                                    
-                                </a>
-                            </div>
-                            <div class="c-list__child-animated">
-                                <a href="#" class="cat-link c-list__item ">
-                                    <img src="img/cat-3.svg" class="cat-link__img img-responsive" alt="">
-                                    <span class="cat-link__name">Загородная</span>
-                                </a>
-                            </div>
-                            <div class="c-list__child-animated">
-                                <a href="#" class="cat-link c-list__item">
-                                    <img src="img/cat-4.svg" class="cat-link__img img-responsive" alt="">
-                                    <span class="cat-link__name">Коммерческая</span>
-                                </a>
-                            </div>
-                            
-                        </div>
-                    </div>
+                    <ul class="fast-sub-menu">
+                        <li class="fast-sub-menu__item app__child-animated">
+                            <a href="#" class="fast-sub-menu__link">Новостройки</a>
+                        </li>
+                        <li class="fast-sub-menu__item app__child-animated">
+                            <a href="#" class="fast-sub-menu__link fast-sub-menu__link--active">Квартиры, комнаты</a>
+                        </li>
+                        <li class="fast-sub-menu__item app__child-animated">
+                            <a href="#" class="fast-sub-menu__link">Загородная</a>
+                        </li>
+                        <li class="fast-sub-menu__item app__child-animated">
+                            <a href="#" class="fast-sub-menu__link ">Коммерческая</a>
+                        </li>
+                    </ul>
                     <div class="fast__wr fast__wr--sale">
                         <div class="buy-left fast__left-side">
                             <h1 class="buy-left__title app__child-animated">Подбор квартир</h1>
-                            
+                            <div class="button-wr button-wr--max-width app__child-animated">
+                                <button class="button-wr__button modal-request-show open-order">
+                                    <span class="button-wr__button-text">Заказать звонок</span>
+                                    <span class="button-wr__button-icon">
+                                        <img src="img/butt-icon.svg" alt="" class="img-responsive">
+                                    </span>
+                                </button>
+                            </div>
                         </div>
                         <div class="fast__right-side">
-                            <div class="fast-content fast-content--less-width">
-                                <form>
-                                    <div class="filter__inp-adress-wr">
-                                        <input type="text" class="filter__inp filter__inp--adress" placeholder="Область, район, город, улица, станция метро">
-                                    </div>
-                                    <!--выбранные адреса-->
-                                    <!-- <div class="filter__picked-addresses">
-                                        <div class="filter__picked-address">
-                                            <p>Москва</p>
-                                            <span class="filter__picked-address-delete">x</span>
-                                        </div>
-                                        <div class="filter__picked-address">
-                                            <p>Ильинское-Усово</p>
-                                            <span class="filter__picked-address-delete">x</span>
-                                        </div>
-                                    </div> -->
-                                    <p class="filter__title-groupe">Комнат</p>
+                            <div class="fast-content app__child-animated">
+                                <form class="fast-form order">
+                                    <input type="text" class="order__input order__input--less-margin" placeholder="Область, район, город, улица, станция метро">
+                                    <p class="fast-form__descr app__child-animated">Комнат</p>
                                     <div class="filter-checkboxes">
                                         <div class="filter-checkbox filter-checkboxes__item">
                                             <div class="filter-checkbox__check-style">
-                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="rooms-check-1">
-                                                <label for="rooms-check-1">1</label>
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="filter-check-1">
+                                                <label for="filter-check-1">1</label>
                                             </div>
                                         </div>
                                         <div class="filter-checkbox filter-checkboxes__item">
                                             <div class="filter-checkbox__check-style">
-                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="rooms-check-2">
-                                                <label for="rooms-check-2">2</label>
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="filter-check-2">
+                                                <label for="filter-check-2">2</label>
                                             </div>
                                         </div>
                                         <div class="filter-checkbox filter-checkboxes__item">
                                             <div class="filter-checkbox__check-style">
-                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="rooms-check-3">
-                                                <label for="rooms-check-3">3</label>
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="filter-check-3">
+                                                <label for="filter-check-3">3</label>
                                             </div>
                                         </div>
                                         <div class="filter-checkbox filter-checkboxes__item">
                                             <div class="filter-checkbox__check-style">
-                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="rooms-check-4">
-                                                <label for="rooms-check-4">4</label>
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="filter-check-4">
+                                                <label for="filter-check-4">4</label>
                                             </div>
                                         </div>
                                         <div class="filter-checkbox filter-checkboxes__item">
                                             <div class="filter-checkbox__check-style">
-                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="rooms-check-5">
-                                                <label for="rooms-check-5">5</label>
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="filter-check-5">
+                                                <label for="filter-check-5">5</label>
                                             </div>
                                         </div>
                                     </div>
-                                    <p class="filter__title-groupe">Цена, руб.</p>
-                                    <div class="filter__flex-inp">
-                                        <input type="text" class="filter__inp" placeholder="От">
-                                        <input type="text" class="filter__inp" placeholder="До">
+                                    
+                                    <div class="fast-form__flex app__child-animated">
+                                        <div class="fast-form__side fast-form__side">
+                                            <p class="fast-form__descr app__child-animated">Цена, руб.</p>
+                                            <div class="order__row-inputs">
+                                                <div class="order__col-inputs">
+                                                    <input type="text" class="order__input order__input--less-margin" placeholder="От">
+                                                </div>
+                                                <div class="order__col-inputs">
+                                                    <input type="text" class="order__input order__input--less-margin" placeholder="До">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="fast-form__side fast-form__side">
+                                            <p class="fast-form__descr app__child-animated">Площадь, м2</p>
+                                            <div class="order__row-inputs">
+                                                <div class="order__col-inputs">
+                                                    <input type="text" class="order__input order__input--less-margin" placeholder="От">
+                                                </div>
+                                                <div class="order__col-inputs">
+                                                    <input type="text" class="order__input order__input--less-margin" placeholder="До">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="filter__title-groupe">Площадь, м2</p>
-                                    <div class="filter__flex-inp">
-                                        <input type="text" class="filter__inp" placeholder="От">
-                                        <input type="text" class="filter__inp" placeholder="До">
+                                    <p class="fast-form__descr app__child-animated">Этаж</p>
+                                    <div class="filter-checkboxes">
+                                        <div class="filter-checkbox filter-checkboxes__item">
+                                            <div class="filter-checkbox__check-style">
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="floor-check-1">
+                                                <label for="floor-check-1">1</label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-checkbox filter-checkboxes__item">
+                                            <div class="filter-checkbox__check-style">
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="floor-check-2">
+                                                <label for="floor-check-2">2</label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-checkbox filter-checkboxes__item">
+                                            <div class="filter-checkbox__check-style">
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="floor-check-3">
+                                                <label for="floor-check-3">3</label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-checkbox filter-checkboxes__item">
+                                            <div class="filter-checkbox__check-style">
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="floor-check-4">
+                                                <label for="floor-check-4">4</label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-checkbox filter-checkboxes__item">
+                                            <div class="filter-checkbox__check-style">
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="floor-check-5">
+                                                <label for="floor-check-5">5</label>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p class="filter__title-groupe">Этаж</p>
-                                    <div class="filter__flex-inp">
-                                        <input type="text" class="filter__inp" placeholder="От">
-                                        <input type="text" class="filter__inp" placeholder="До">
-                                    </div>
-                            
-                                    <p class="filter__title-groupe">Кухня, м2</p>
-                                    <input type="text" class="filter__inp" placeholder="От">
-        
-                                    <p class="filter__title-groupe">Тип здания</p>
+                                    <p class="fast-form__descr app__child-animated">Кухня, м2</p>
+                                    <input type="text" class="order__input order__input--less-margin" placeholder="От">
+                                    <p class="fast-form__descr app__child-animated">Тип здания</p>
                                     <div class="filter-checkboxes">
                                         <div class="filter-checkbox filter-checkboxes__item">
                                             <div class="filter-checkbox__check-style">
@@ -178,22 +197,40 @@
                                         </div>
                                         <div class="filter-checkbox filter-checkboxes__item">
                                             <div class="filter-checkbox__check-style">
-                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="type-check-3">
-                                                <label for="type-check-3">Панельный</label>
+                                                <input type="checkbox" class="filter-checkbox__checkbox" name="" id="type-check-4">
+                                                <label for="type-check-4">Панельный</label>
                                             </div>
                                         </div>
+                                        
                                     </div>
-                                    <div class="filter__inp-adress-wr">
-                                        <input type="text" class="filter__inp" placeholder="Имя">
+                                    <div class="fast-form__flex app__child-animated">
+                                        <div class="fast-form__side">
+                                            <input type="text" class="order__input order__input--less-margin" placeholder="Ваше имя">
+                                        </div>
+                                        <div class="fast-form__side">
+                                            <input type="text" class="order__input tel-inp order__input--less-margin" placeholder="Телефон">
+                                        </div>
                                     </div>
-                                    <div class="filter__inp-adress-wr">
-                                        <input type="text" class="filter__inp tel-inp" placeholder="Телефон">
+                                    
+                                    <div class="fast-form__flex app__child-animated">
+                                        <div class="fast-form__side">
+                                            <div class="one-checkbox one-checkbox--less-margin">
+                                                <div class="one-checkbox__check-style">
+                                                    <input type="checkbox" class="one-checkbox__checkbox" name="role" id="checkbox-1" checked="">
+                                                    <label for="checkbox-1"></label>
+                                                </div>
+                                                <p class="one-checkbox__label">Согласен на обработку персональных данных</p>
+                                            </div>
+                                        </div>
+                                        <div class="fast-form__side">
+                                            <button type="submit" class="fast-form__submit">Подобрать предложения</button>
+                                        </div>
                                     </div>
-                                    <button class="filter__submit" type="button">Подобрать предложения</button>
                                 </form>
-                                
                             </div>
+                            
                         </div>
+                            
                     </div>
                 </div>
             </div>   
