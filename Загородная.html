@@ -12,8 +12,8 @@
 </head>
 <body>
     
-    <div class="app app--dark-theme">
-        <section class="app__flex-wrapper">
+    <div class="app">
+        <section class="app__flex-wrapper app__flex-wrapper--map-theme">
             <header class="header">
                 <div class="header__left-side">
                     <a href="#" class="header__logo">
@@ -50,70 +50,69 @@
                     <p class="header__call-me open-order">Заказать звонок</p>
                 </div>
             </header>
-            <div class="fast">
-                <div class="lg-container">
-                    <ul class="fast-sub-menu">
-                        <li class="fast-sub-menu__item app__child-animated">
-                            <a href="#" class="fast-sub-menu__link fast-sub-menu__link--active">Почему Миель</a>
-                        </li>
-                        <li class="fast-sub-menu__item app__child-animated">
-                            <a href="#" class="fast-sub-menu__link">Схема работы</a>
-                        </li>
-                        <li class="fast-sub-menu__item app__child-animated">
-                            <a href="#" class="fast-sub-menu__link">Оценка стоимости</a>
-                        </li>
-                        <li class="fast-sub-menu__item app__child-animated">
-                            <a href="#" class="fast-sub-menu__link">Типовые ситуации</a>
-                        </li>
-                        <li class="fast-sub-menu__item app__child-animated">
-                            <a href="#" class="fast-sub-menu__link">Награды</a>
-                        </li>
-                    </ul>
-                    <div class="fast__wr">
-                        <div class="buy-left fast__left-side">
-                            <h1 class="buy-left__title app__child-animated">Срочный выкуп<span>квартир и комнат по максимальной цене</span></h1>
-                            <div class="button-wr button-wr--max-width app__child-animated">
-                                <button class="button-wr__button modal-request-show open-order">
-                                    <span class="button-wr__button-text">Заказать звонок</span>
-                                    <span class="button-wr__button-icon">
-                                        <img src="img/butt-icon.svg" alt="" class="img-responsive">
-                                    </span>
-                                </button>
+            
+            <div class="search">
+                <div class="filter search__filter">
+                    <div class="filter__wr">
+                        <button class="filter__sm-close">X <span>Фильтр</span></button>
+                        <h2 class="filter__title">Фильтры</h2>
+                        <form>
+                            <div class="filter__inp-adress-wr">
+                                <input type="text" class="filter__inp filter__inp--adress" placeholder="Область, район, город, улица, станция метро">
                             </div>
-                        </div>
-                        <div class="fast__right-side">
-                            <div class="fast-content">
-                                <h2 class="fast-content__title app__child-animated">ПОЧЕМУ МИЭЛЬ «ПРЕЧИСТЕНКА»</h2>
-                                <div class="flex-purple flex-purple--big">
-                                    <div class="flex-purple__item app__child-animated">
-                                        <img src="img/fast-11.svg" class="flex-purple__item-img img-responsive" alt="">
-                                        <p class="flex-purple__item-title">ОЦЕНКА</p>
-                                        <p class="flex-purple__item-text">Выезд эксперта в день обращения</p>
-                                    </div>
-                                    <div class="flex-purple__item app__child-animated">
-                                        <img src="img/fast-12.svg" class="flex-purple__item-img img-responsive" alt="">
-                                        <p class="flex-purple__item-title">АВАНС</p>
-                                        <p class="flex-purple__item-text">Выдача аванса до оформления сделки</p>
-                                    </div>
-                                    <div class="flex-purple__item app__child-animated">
-                                        <img src="img/fast-13.svg" class="flex-purple__item-img img-responsive" alt="">
-                                        <p class="flex-purple__item-title">ДОКУМЕНТЫ</p>
-                                        <p class="flex-purple__item-text">Сбор и подготовка документов для сделки</p>
-                                    </div>
-                                    <div class="flex-purple__item app__child-animated">
-                                        <img src="img/fast-14.svg" class="flex-purple__item-img img-responsive" alt="">
-                                        <p class="flex-purple__item-title">СДЕЛКА</p>
-                                        <p class="flex-purple__item-text">Заключение договора и проведение взаиморасчетов</p>
-                                    </div>
-                                   
+                            <!--выбранные адреса-->
+                            <!-- <div class="filter__picked-addresses">
+                                <div class="filter__picked-address">
+                                    <p>Москва</p>
+                                    <span class="filter__picked-address-delete">x</span>
                                 </div>
+                                <div class="filter__picked-address">
+                                    <p>Ильинское-Усово</p>
+                                    <span class="filter__picked-address-delete">x</span>
+                                </div>
+                            </div> -->
+                           
+                            
+                    
+                            <p class="filter__title-groupe">Цена, руб.</p>
+                            <div class="filter__flex-inp">
+                                <input type="text" class="filter__inp" placeholder="От">
+                                <input type="text" class="filter__inp" placeholder="До">
                             </div>
-                        </div>
+                            <p class="filter__title-groupe">Площадь, м2</p>
+                            <div class="filter__flex-inp">
+                                <input type="text" class="filter__inp" placeholder="От">
+                                <input type="text" class="filter__inp" placeholder="До">
+                            </div>
+                            
+                           
+                            <button class="filter__submit" type="button">Подобрать предложения</button>
+                        </form>
                     </div>
                 </div>
-            </div>   
-        </section>
+                <div class="map-side search__map">
+                    <div class="map-side__wr">
+                        <h1 class="map-side__title">
+                            <button class="map-side__filter-open">
+                                <img src="img/filter.svg" class="img-responsive"></button>
+                                База обьектов
+                        </h1>
+                        <ul class="breads map-side__breads">
+                            <li class="breads__item">
+                                <a href="#" class="breads__link">Главная</a>
+                            </li>
+                            <li class="breads__item">
+                                <span class="breads__link">База обьектов</span>
+                            </li>
+                        </ul>
+                        <div class="map map-side__map" id="map"></div>
+                    </div>
+                </div>
+            </div>
 
+
+            
+        </section>
         <div class="right-modal right-modal--menu">
             <div class="right-modal__wrapper">
                 <button class="right-modal__close">X <span>Меню</span></button>
@@ -208,13 +207,15 @@
 
 
 
-    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/inputmask.js"></script>
     <script type="text/javascript" src="js/jquery.inputmask.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/map-init.js"></script>
+
 </body>
 </html>
