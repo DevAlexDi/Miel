@@ -118,6 +118,11 @@
             transition-delay: 0.65s;
         }
     }
+
+    &--top-bott-distance {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 .cat-link {
@@ -125,6 +130,10 @@
     border-radius: 10px;
     padding: 10px;
     transition: 0.3s;
+
+    &--active {
+        background: rgba(150, 0, 79, 1);
+    }
 
     &:hover {
         background: rgba(150, 0, 79, 1);

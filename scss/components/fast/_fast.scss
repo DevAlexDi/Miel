@@ -116,6 +116,11 @@
 }
 
 .fast-content {
+
+    &--less-width {
+        max-width: 600px;
+        margin: 0 auto;
+    }
     &__title {
        font-size: 36px;
        line-height: 43px;
